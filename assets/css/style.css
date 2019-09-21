@@ -8,7 +8,7 @@ body {
     color: white;
     display: flex;
         flex-direction: column;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "merriweather","courgette",'Open Sans', sans-serif;
     font-size: 100%;
     line-height: 1.6em;
     min-height: 100vh;
@@ -18,20 +18,14 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: "Kaushan Script", cursive;
     line-height: 1em;
-    
-}
-
-p {
-
-}
-
-h1, p {
     margin: 1em auto;
 }
+    
+    h1 { font-size: 2.5em; }
+    h2 { font-size: 2em; margin-top: 0; }
+    h3 {font-size: 1.5em; }
 
-h1 { font-size: 2.5em; }
-h2 { font-size: 2em; }
-h3 {font-size: 1.5em; }
+p { margin: 1em auto;}
 
 header h1, 
 article, 
@@ -72,7 +66,7 @@ footer {
     margin: 1em 0;
 }
 
-#scoreboard {
+#scoreboard, #crystals {
     display: flex;
         align-items: stretch;
         flex-direction: row;
@@ -83,20 +77,29 @@ footer {
 .panel {
     text-align: center;
     width: 32%;
-        min-width: 240px;
+}
+
+#crystals {
+    justify-content: space-around;
+    margin: 1em auto;
+    width: 80%;
 }
 
 .gem {
-    width: 25%;
+    width: 20%;
 }
 .gem:hover {
     background: rgba(255, 255, 255, 0.1);
 }
 
+.number {
+    font-family: "Kaushan Script", cursive;
+    font-size: 2em;
+}
+
 @media (max-width: 900px) {
-    .panel {
-        min-width: 100px;
-    }
+    #crystals { width: 100%;}
+    .gems { width: 22%; }
 }
 
 @media (max-width: 600px) {
@@ -104,5 +107,6 @@ footer {
         flex-grow: 1;
         width: 100%;
     }
+    .gems {width: 25%;}
 }
 
