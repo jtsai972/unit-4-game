@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script|Open+Sans&display=swap" rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+    <!-- jQuery -->
+    <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+
+    <!-- Title -->
+    <title>Crystals Collector Game</title>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Crystals Collector</h1>
+    </header>
+
+    <!-- Article -->
+    <article>
+        <!-- Directions -->
+        <section id="directions">
+            <h2>Instructions</h2>
+            <p>Below are four crystals of differing values. Click them to trade them in for points.</p>
+            <p>In order to win, you must match the total points to the goal number.</p>
+            <p>You will lose if your total score goes above the goal number.</p>
+            <p>Each crystal's value is unknown until you trade it in.</p>
+            <p>Everytime the game starts, the values of each crystal will change.</p>
+        </section>
+
+        <section id="scoreboard">
+            <!--  -->
+            <section class="panel">
+                <h2>Target Points</h2>
+            </section>
+
+            <!--  -->
+            <section class="panel">
+                <h2>Current Points</h2>
+                <p> <span id="result"></span></p>
+            </section>
+
+            <!-- Scoreboard -->
+            <section class="panel" id="score">
+                <h2>Score</h2>
+                <p>Wins: <span id="wins"></span></p>
+                <p>Losses: <span id="losses"></span></p>
+            </section>
+        </section>
+
+        <section id="crystals">
+        </section>
+
+        <section id="goal"></section>
+
+        <section id="score-total">
+
+        </section>
+
+    </article>
+    <!-- Crystals -->
+    <!-- Random number generator for crystal values-->
+    
+
+    <!-- Footer -->
+    <footer>
+        <p>Created by Jasmine</p>
+    </footer>
+
+    <!-- Script -->
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+</body>
+</html>
