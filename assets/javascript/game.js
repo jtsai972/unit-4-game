@@ -71,9 +71,7 @@ $( function() { //this is the equivalent of $(document).ready();
         $("#result").text(points);
 
         if(points >= target) {
-
             if(points > target) { countLoss++; }
-            
             if (points === target) { countWin++; }
 
             newRound();
